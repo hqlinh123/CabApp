@@ -1,3 +1,34 @@
 {
-  "extends": "@react-native/typescript-config/tsconfig.json"
+  "presets": ["module:metro-react-native-babel-preset"],
+  "compilerOptions": {
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["app/*"],
+      "@components/*": ["app/components/*"],
+      "@auth/*": ["app/screens/Auth/*"],
+      "@features/*": ["app/screens/Features/*"],
+      "@constants/*": ["app/constants/*"],
+      "@navigations/*" :["app/navigations/*"],
+      "@services/*":["app/services/*"]
+    }
+  },
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["./app"],
+        "extensions": [".js", ".ts", ".tsx", ".json"],
+        "alias": {
+          "@components": "./app/components",
+          "@auth": "./app/screens/Auth",
+          "@features": "./app/screens/Features",
+          "@constants":"./app/constants",
+          "@navigations" :"./app/navigations",
+          "@services":["./app/services"]
+        }
+      }
+    ]
+  ],
+  "extends": "expo/tsconfig.base",
 }
