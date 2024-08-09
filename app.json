@@ -1,4 +1,10 @@
 {
   "name": "TaxiApp",
-  "displayName": "TaxiApp"
+  "displayName": "TaxiApp",
+  "android": {
+    "package": "com.linhkhoai.taxiapp"
+  },
+  "ios": {
+    "bundleIdentifier": "com.linhkhoai.taxiapp"
+  }
 }
