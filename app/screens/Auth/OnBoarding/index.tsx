@@ -15,19 +15,17 @@ const OnBoarding = () => {
   const onNext = () => onboardingRef.current.goNext();
   const onDone = () => NavigationService.navigate(SCREENS.SIGN_UP);
 
-  const renderDotComponent = ({selected}: DotProps) => (
-    <View style={[styles.dot, selected && styles.selectedDot]} />
-  );
+  const renderDotComponent = ({selected}: DotProps) => <View style={[styles.dot, selected && styles.selectedDot]} />;
 
   const renderNextButtonComponent = () => (
     <TouchableOpacity style={styles.button} onPress={onNext}>
-      <MaterialIcons name="arrow-circle-right" size={50} color="#016B45" />
+      <MaterialIcons name="arrow-circle-right" size={50} color="#13B782" />
     </TouchableOpacity>
   );
 
   const renderDoneButtonComponent = () => (
     <TouchableOpacity style={styles.button} onPress={onDone}>
-      <Ionicons name="checkmark-circle-sharp" size={50} color="#016B45" />
+      <Ionicons name="checkmark-circle-sharp" size={50} color="#13B782" />
     </TouchableOpacity>
   );
 
