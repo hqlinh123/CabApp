@@ -3668,6 +3668,7 @@ __metadata:
     babel-plugin-module-resolver: ^5.0.2
     eslint: ^8.19.0
     expo: 51
+    expo-checkbox: ~3.0.0
     expo-font: ~12.0.9
     expo-image: ~1.12.13
     expo-splash-screen: ~0.27.5
@@ -5841,6 +5842,13 @@ __metadata:
   peerDependencies:
     expo: "*"
   checksum: abf6afee29db1df356008b2260ecfd37eafdeeda989deeaf546d6c6857f82f71efe6d2f6e348d5bf0f077325f9ce2c8dad006ad5d8d2df35cdd9bf3dc15e714a
+  languageName: node
+  linkType: hard
+
+"expo-checkbox@npm:~3.0.0":
+  version: 3.0.0
+  resolution: "expo-checkbox@npm:3.0.0"
+  checksum: f440b8c326f4f410f36c5c7f57349518ad5421ceccddb757a031fec38f9512b7067358825071d5d2bb560025b458c8f4b0a04095308749aa467057e524165013
   languageName: node
   linkType: hard
 

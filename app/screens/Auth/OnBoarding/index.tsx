@@ -13,7 +13,7 @@ import {SCREENS} from 'constants/screenKeys';
 const OnBoarding = () => {
   const onboardingRef = useRef<Onboarding>(null);
   const onNext = () => onboardingRef.current.goNext();
-  const onDone = () => NavigationService.navigate(SCREENS.SIGN_UP);
+  const onDone = () => NavigationService.navigate(SCREENS.SIGN_IN);
 
   const renderDotComponent = ({selected}: DotProps) => <View style={[styles.dot, selected && styles.selectedDot]} />;
 

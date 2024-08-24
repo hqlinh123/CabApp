@@ -10,7 +10,11 @@ export default function AuthStackNavigator() {
     <AuhStack.Navigator>
       <AuhStack.Screen name={SCREENS.ON_BOARDING} component={OnBoarding} options={{headerShown: false}} />
       <AuhStack.Screen name={SCREENS.SIGN_UP} options={{headerShown: false}} component={SignUp} />
-      <AuhStack.Screen name={SCREENS.SIGN_IN} component={SignIn} />
+      <AuhStack.Screen
+        name={SCREENS.SIGN_IN}
+        component={SignIn}
+        options={{headerShown: false, gestureEnabled: false}}
+      />
     </AuhStack.Navigator>
   );
 }

@@ -3,14 +3,20 @@ import {StyleSheet} from 'react-native';
 export default StyleSheet.create({
   input: {
     backgroundColor: '#fff',
-    padding: 10,
-    borderRadius: 5,
+    borderRadius: 12,
     borderColor: '#ddd',
     borderWidth: 1,
-    marginBottom: 15,
+    paddingVertical: 15,
+    paddingHorizontal: 10,
+    marginTop: 20,
   },
   errorText: {
     color: 'red',
-    marginBottom: 10,
+    fontSize: 10,
+    fontFamily: 'OpenSans-SemiBold',
+    marginTop: 10,
+  },
+  checkbox: {
+    borderRadius: 4,
   },
 });
