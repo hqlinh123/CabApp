@@ -10,8 +10,11 @@ export type SocialCustomProps = {
   type: 'sign in' | 'sign up';
   isChecked?: boolean;
   onCheck?: (value: boolean) => void;
+  onLoginApple?: () => void;
+  onLoginFaceBook?: () => void;
+  onLoginGoogle?: () => void;
 };
-const SocialCustom = ({type}: SocialCustomProps) => {
+const SocialCustom = ({type, onLoginApple, onLoginFaceBook, onLoginGoogle}: SocialCustomProps) => {
   const description = type === 'sign in' ? "Don't have account." : ' Already have an account?';
   const title = type === 'sign in' ? 'Sign Up' : 'Sign In';
 
@@ -36,7 +39,8 @@ const SocialCustom = ({type}: SocialCustomProps) => {
             backgroundColor: '#F0F0F0',
             justifyContent: 'center',
             alignItems: 'center',
-          }}>
+          }}
+          onPress={onLoginFaceBook}>
           <FontAwesome5 name="facebook" size={24} color="#005BF0" />
         </TouchableOpacity>
         <TouchableOpacity
@@ -48,7 +52,8 @@ const SocialCustom = ({type}: SocialCustomProps) => {
             justifyContent: 'center',
             alignItems: 'center',
             marginHorizontal: 20,
-          }}>
+          }}
+          onPress={onLoginGoogle}>
           <Image source={'https://img.icons8.com/color/96/google-logo.png'} style={{width: 32, height: 32}} />
         </TouchableOpacity>
         <TouchableOpacity
@@ -56,11 +61,12 @@ const SocialCustom = ({type}: SocialCustomProps) => {
             width: 50,
             height: 50,
             borderRadius: 25,
-            backgroundColor: '#F0F0F0',
+            backgroundColor: '#000',
             justifyContent: 'center',
             alignItems: 'center',
-          }}>
-          <FontAwesome6 name="apple" size={24} color="black" />
+          }}
+          onPress={onLoginApple}>
+          <FontAwesome6 name="apple" size={24} color="white" />
         </TouchableOpacity>
       </View>
       <View>

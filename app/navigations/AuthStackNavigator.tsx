@@ -4,6 +4,8 @@ import {SCREENS} from '@constants/screenKeys';
 import OnBoarding from '@auth/OnBoarding';
 import SignUp from '@auth/SignUp';
 import SignIn from '@auth/SignIn';
+import ForgotPassword from 'screens/Auth/ForgotPassword';
+
 const AuhStack = createNativeStackNavigator();
 export default function AuthStackNavigator() {
   return (
@@ -13,6 +15,11 @@ export default function AuthStackNavigator() {
       <AuhStack.Screen
         name={SCREENS.SIGN_IN}
         component={SignIn}
+        options={{headerShown: false, gestureEnabled: false}}
+      />
+      <AuhStack.Screen
+        name={SCREENS.FORGOT_PASSWORD}
+        component={ForgotPassword}
         options={{headerShown: false, gestureEnabled: false}}
       />
     </AuhStack.Navigator>

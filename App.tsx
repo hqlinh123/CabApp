@@ -1,4 +1,4 @@
-import AppNavigator from 'navigations/RootNavigator';
+import AppNavigator from '@navigations/RootNavigator';
 import React from 'react';
 
 const App = () => {

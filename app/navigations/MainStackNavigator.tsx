@@ -6,7 +6,11 @@ const MainStack = createNativeStackNavigator();
 export default function MainStackNavigator() {
   return (
     <MainStack.Navigator>
-      <MainStack.Screen name={SCREENS.DASH_BOARD} component={DashBoard} />
+      <MainStack.Screen
+        name={SCREENS.DASH_BOARD}
+        options={{gestureEnabled: false, headerShown: false}}
+        component={DashBoard}
+      />
     </MainStack.Navigator>
   );
 }

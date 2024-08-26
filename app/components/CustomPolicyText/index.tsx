@@ -8,12 +8,14 @@ const CustomPolicyText = ({type, isChecked, onCheck}: SocialCustomProps) => {
   const title = type === 'sign in' ? ' By logging in' : ' By signning up';
   return (
     <View style={{flexDirection: 'row', marginTop: 16}}>
-      <Checkbox
-        style={styles.checkbox}
-        value={isChecked}
-        onValueChange={onCheck}
-        color={isChecked ? '#016B45' : '#016B45'}
-      />
+      {type === 'sign up' && (
+        <Checkbox
+          style={styles.checkbox}
+          value={isChecked}
+          onValueChange={onCheck}
+          color={isChecked ? '#016B45' : '#016B45'}
+        />
+      )}
       <Text style={{textAlign: 'center'}}>
         {title}, you agree to our{' '}
         <Text style={{textDecorationLine: 'underline', fontWeight: '600', color: '#016B45'}} onPress={() => {}}>

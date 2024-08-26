@@ -1,16 +1,15 @@
-import * as NavigationService from '@services/NavigationService';
+import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import CustomPolicyText from 'components/CustomPolicyText';
 import FormInput from 'components/FormInput';
 import SocialCustom from 'components/SocialCustom';
 import {blurhash} from 'constants/hash';
-import {SCREENS} from 'constants/screenKeys';
+import {VALIDATE_EMAIL_RULES, VALIDATE_PASSWORD_RULES} from 'constants/regx';
 import {Image} from 'expo-image';
 import React from 'react';
 import {useForm} from 'react-hook-form';
 import {SafeAreaView, Text, TouchableOpacity, View} from 'react-native';
 import useAuth from '../useAuth';
 import styles from './styles';
-import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 
 type FormData = {
   fullName: string;
@@ -24,15 +23,21 @@ const SignUp = () => {
     control,
     handleSubmit,
     formState: {isValid},
-  } = useForm<FormData>();
-  const {isCheckBox, onCheck} = useAuth();
-  const isEnableButton = isCheckBox;
-  const onSubmit = (data: FormData) => {
-    console.log('data', data);
-    NavigationService.navigate(SCREENS.SIGN_IN);
-  };
-
-  const goBack = () => NavigationService.goBack();
+  } = useForm<FormData>({mode: 'onChange'});
+  const {
+    onSubmit,
+    goBack,
+    onForgotPassword,
+    onMaskPassword,
+    onRememberPassword,
+    onCheckTermCondition,
+    onLoginApple,
+    onLoginFacebook,
+    onLoginGoogle,
+    isCheckTerm,
+    isMaskPassword,
+    isRememberPassword,
+  } = useAuth();
 
   return (
     <SafeAreaView style={{flex: 1, backgroundColor: '#FFFFFF'}}>
@@ -54,10 +59,7 @@ const SignUp = () => {
           name="email"
           placeholder="example@email.com"
           keyboardType="email-address"
-          rules={{
-            required: 'Email is required',
-            pattern: {value: /^\S+@\S+$/i, message: 'Invalid email format'},
-          }}
+          rules={VALIDATE_EMAIL_RULES}
           isEmail
           title="Email address"
           isValid={isValid}
@@ -70,20 +72,30 @@ const SignUp = () => {
           name="password"
           placeholder="Must be 8 characters"
           secureTextEntry
-          rules={{required: 'Password is required'}}
+          rules={VALIDATE_PASSWORD_RULES}
           isPassword
           title="Password"
           maxLength={8}
           isOther={false}
+          onCheckBox={onRememberPassword}
+          onForgot={onForgotPassword}
+          onMask={onMaskPassword}
+          isChecked={isRememberPassword}
+          isMask={isMaskPassword}
         />
-        <CustomPolicyText type="sign up" isChecked={isCheckBox} onCheck={onCheck} />
+        <CustomPolicyText type="sign up" isChecked={isCheckTerm} onCheck={onCheckTermCondition} />
         <TouchableOpacity
-          disabled={!isEnableButton}
-          style={[styles.button, !isEnableButton && styles.disabelBtn]}
+          disabled={!isCheckTerm}
+          style={[styles.button, !isCheckTerm && styles.disabelBtn]}
           onPress={handleSubmit(onSubmit)}>
-          <Text style={styles.buttonText}>Sign Up</Text>
+          <Text style={styles.buttonText}>Continue</Text>
         </TouchableOpacity>
-        <SocialCustom type="sign up" />
+        <SocialCustom
+          type="sign up"
+          onLoginApple={onLoginApple}
+          onLoginFaceBook={onLoginFacebook}
+          onLoginGoogle={onLoginGoogle}
+        />
       </View>
     </SafeAreaView>
   );

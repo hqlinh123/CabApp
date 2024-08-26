@@ -1,3 +1,6 @@
 <resources>
   <string name="app_name">TaxiApp</string>
+  <string name="facebook_app_id">1532915724266711</string>
+  <string name="facebook_client_token">a8e610c4010252d34aa92dd95a0a0b90</string>
+  <string name="fb_login_protocol_scheme">fb1532915724266711</string>
 </resources>

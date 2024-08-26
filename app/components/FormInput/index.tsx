@@ -1,11 +1,12 @@
 import React, {useState} from 'react';
-import {Text, TextInput, View} from 'react-native';
+import {GestureResponderEvent, Text, TextInput, View} from 'react-native';
 import {Controller, Control} from 'react-hook-form';
 import styles from './styles';
 import Fontisto from '@expo/vector-icons/Fontisto';
 import Ionicons from '@expo/vector-icons/Ionicons';
 import Checkbox from 'expo-checkbox';
 import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
+import useAuth from 'screens/Auth/useAuth';
 
 type FormInputProps = {
   control: Control<any>; // The form control
@@ -20,6 +21,11 @@ type FormInputProps = {
   isValid?: boolean;
   maxLength?: number;
   isOther?: boolean;
+  isMask?: boolean;
+  isChecked?: boolean;
+  onForgot?: () => void;
+  onCheckBox?: (value: boolean) => void;
+  onMask?: () => void;
 };
 
 const FormInput = ({
@@ -27,17 +33,18 @@ const FormInput = ({
   name,
   rules,
   placeholder,
-  secureTextEntry = false,
   keyboardType = 'default',
-  title,
   isEmail = false,
   isPassword = false,
   isValid,
   maxLength = 0,
   isOther = false,
+  isChecked,
+  isMask,
+  onForgot,
+  onCheckBox,
+  onMask,
 }: FormInputProps) => {
-  const [isChecked, setChecked] = useState(false);
-  const [isMask, setIsMask] = useState(false);
   return (
     <View>
       <Controller
@@ -46,7 +53,7 @@ const FormInput = ({
         rules={rules}
         render={({field: {onChange, onBlur, value}, fieldState: {error}}) => (
           <>
-            <View style={[{flexDirection: 'row'}, styles.input]}>
+            <View style={[{flexDirection: 'row'}, styles.input, error && {borderColor: 'red'}]}>
               {isEmail && <Fontisto name="email" size={18} color="#016B45" style={{marginRight: 12}} />}
               {isPassword && <Fontisto name="locked" size={18} color="#016B45" style={{marginRight: 12}} />}
               <TextInput
@@ -73,7 +80,7 @@ const FormInput = ({
                   size={24}
                   color="#016B45"
                   style={{position: 'absolute', right: 10, top: 15}}
-                  onPress={() => setIsMask(!isMask)}
+                  onPress={onMask}
                 />
               )}
             </View>
@@ -91,13 +98,13 @@ const FormInput = ({
                   <Checkbox
                     style={styles.checkbox}
                     value={isChecked}
-                    onValueChange={setChecked}
+                    onValueChange={onCheckBox}
                     color={isChecked ? '#016B45' : '#016B45'}
                   />
                   <Text style={{marginHorizontal: 6}}>Remember me</Text>
                 </View>
                 <View>
-                  <Text onPress={() => {}} style={{textDecorationLine: 'underline', color: '#016B45'}}>
+                  <Text onPress={onForgot} style={{textDecorationLine: 'underline', color: '#016B45'}}>
                     Forgot password?
                   </Text>
                 </View>
