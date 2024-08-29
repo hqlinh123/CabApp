@@ -31,7 +31,9 @@
           "userTrackingPermission": "This identifier will be used to deliver personalized ads to you."
         }
       ],
-      ["expo-apple-authentication"]   
+      [
+        "expo-apple-authentication"
+      ]
     ],
     "ios": {
       "infoPlist": {
@@ -60,6 +62,11 @@
         "com.google.android.gms.permission.AD_ID"
       ],
       "package": "com.linhkhoai.taxiapp"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4699af63-cc4f-4cc1-9196-7c8109132ac7"
+      }
     }
   }
 }
