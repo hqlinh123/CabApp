@@ -1,5 +1,7 @@
 {
-  "presets": ["module:metro-react-native-babel-preset"],
+  "presets": [
+    "module:metro-react-native-babel-preset"
+  ],
   "compilerOptions": {
     "jsx": "react",
     "baseUrl": ".",
@@ -12,28 +14,51 @@
     "sourceMap": true,
     "allowJs": true,
     "paths": {
-      "*": ["app/*"],
-      "@components/*": ["app/components/*"],
-      "@auth/*": ["app/screens/Auth/*"],
-      "@features/*": ["app/screens/Features/*"],
-      "@constants/*": ["app/constants/*"],
-      "@navigations/*" :["app/navigations/*"],
-      "@services/*":["app/services/*"]
+      "*": [
+        "app/*"
+      ],
+      "@components/*": [
+        "app/components/*"
+      ],
+      "@auth/*": [
+        "app/screens/Auth/*"
+      ],
+      "@features/*": [
+        "app/screens/Features/*"
+      ],
+      "@constants/*": [
+        "app/constants/*"
+      ],
+      "@navigations/*": [
+        "app/navigations/*"
+      ],
+      "@services/*": [
+        "app/services/*"
+      ]
     }
   },
   "plugins": [
     [
       "module-resolver",
       {
-        "root": ["./app"],
-        "extensions": [".js", ".ts", ".tsx", ".json"],
+        "root": [
+          "./app"
+        ],
+        "extensions": [
+          ".js",
+          ".ts",
+          ".tsx",
+          ".json"
+        ],
         "alias": {
           "@components": "./app/components",
           "@auth": "./app/screens/Auth",
           "@features": "./app/screens/Features",
-          "@constants":"./app/constants",
-          "@navigations" :"./app/navigations",
-          "@services":["./app/services"]
+          "@constants": "./app/constants",
+          "@navigations": "./app/navigations",
+          "@services": [
+            "./app/services"
+          ]
         }
       }
     ]
@@ -45,5 +70,6 @@
     "metro.config.js",
     "react-native.config.js",
     "index.js"
-  ]
+  ],
+  "extends": "expo/tsconfig.base"
 }

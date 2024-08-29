@@ -7,37 +7,195 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0079FC46818D41079CE9EDB5 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C61EA43F80444575AAB584A4 /* OpenSans-Light.ttf */; };
+		0473B2522C80653300D215BF /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		0473B2532C80653300D215BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		0473B2542C80653300D215BF /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
+		0473B2552C80653300D215BF /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66C0F5B72AC490197371557 /* noop-file.swift */; };
+		0473B2572C80653300D215BF /* libPods-TaxiApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EEBF8E8E6FB1BC6CAF49B5 /* libPods-TaxiApp.a */; };
+		0473B2592C80653300D215BF /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
+		0473B25A2C80653300D215BF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		0473B25B2C80653300D215BF /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
+		0473B25C2C80653300D215BF /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 773671309242B1E57F4820D8 /* PrivacyInfo.xcprivacy */; };
+		0473B25D2C80653300D215BF /* DMSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C43481BB02534551B849013C /* DMSans-Black.ttf */; };
+		0473B25E2C80653300D215BF /* DMSans-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CAE495D90874315B16ABE78 /* DMSans-BlackItalic.ttf */; };
+		0473B25F2C80653300D215BF /* DMSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69890E0D590843078909300B /* DMSans-Bold.ttf */; };
+		0473B2602C80653300D215BF /* DMSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E9A069FD3D64315A9880971 /* DMSans-BoldItalic.ttf */; };
+		0473B2612C80653300D215BF /* DMSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF34E68F48714F9199012978 /* DMSans-ExtraBold.ttf */; };
+		0473B2622C80653300D215BF /* DMSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB25BAFD7946488F9F060B7B /* DMSans-ExtraBoldItalic.ttf */; };
+		0473B2632C80653300D215BF /* DMSans-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 524E5138CC4E46EDBD159CF9 /* DMSans-ExtraLight.ttf */; };
+		0473B2642C80653300D215BF /* DMSans-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A127CA2262A74ED2BD46F6C3 /* DMSans-ExtraLightItalic.ttf */; };
+		0473B2652C80653300D215BF /* DMSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56729F0717BF42E89EA2CBDE /* DMSans-Italic.ttf */; };
+		0473B2662C80653300D215BF /* DMSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B2241B14E0547F8BBAD0C05 /* DMSans-Light.ttf */; };
+		0473B2672C80653300D215BF /* DMSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D5712066D1D49BC8C500DD2 /* DMSans-LightItalic.ttf */; };
+		0473B2682C80653300D215BF /* DMSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCE3CA933F3945D3B2937562 /* DMSans-Medium.ttf */; };
+		0473B2692C80653300D215BF /* DMSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 98C08F0F50F947F4B8DF4B8C /* DMSans-MediumItalic.ttf */; };
+		0473B26A2C80653300D215BF /* DMSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C76F2730EBD48E08BEBCF26 /* DMSans-Regular.ttf */; };
+		0473B26B2C80653300D215BF /* DMSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 561F08FCD8DA46619A21D100 /* DMSans-SemiBold.ttf */; };
+		0473B26C2C80653300D215BF /* DMSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86700E6138234103B08D1BEF /* DMSans-SemiBoldItalic.ttf */; };
+		0473B26D2C80653300D215BF /* DMSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4945F34179E4DF8A7A5A2BA /* DMSans-Thin.ttf */; };
+		0473B26E2C80653300D215BF /* DMSans-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B93F6335D359482BB2593795 /* DMSans-ThinItalic.ttf */; };
+		0473B26F2C80653300D215BF /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71096FDC14F94AE087D7ACEF /* OpenSans-Bold.ttf */; };
+		0473B2702C80653300D215BF /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50870022693B4EA7B287F8E4 /* OpenSans-BoldItalic.ttf */; };
+		0473B2712C80653300D215BF /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B73105E78AAA471DA68A888C /* OpenSans-ExtraBold.ttf */; };
+		0473B2722C80653300D215BF /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E7192B94D9B48E68CEFD829 /* OpenSans-ExtraBoldItalic.ttf */; };
+		0473B2732C80653300D215BF /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5FE580A7FB244948724BBD3 /* OpenSans-Italic.ttf */; };
+		0473B2742C80653300D215BF /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C61EA43F80444575AAB584A4 /* OpenSans-Light.ttf */; };
+		0473B2752C80653300D215BF /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F90E5F58A2142078A60237A /* OpenSans-LightItalic.ttf */; };
+		0473B2762C80653300D215BF /* OpenSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FD806E721184FB09F1FC52F /* OpenSans-Medium.ttf */; };
+		0473B2772C80653300D215BF /* OpenSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 822B0F60174F4F40965A5E77 /* OpenSans-MediumItalic.ttf */; };
+		0473B2782C80653300D215BF /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24761336CF1F468A8964065A /* OpenSans-Regular.ttf */; };
+		0473B2792C80653300D215BF /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D75DD62E28148DAB646EDAB /* OpenSans-SemiBold.ttf */; };
+		0473B27A2C80653300D215BF /* OpenSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6AF25B5F951A4CF998F1C7C6 /* OpenSans-SemiBoldItalic.ttf */; };
+		0473B2872C80653600D215BF /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
+		0473B2882C80653600D215BF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		0473B2892C80653600D215BF /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
+		0473B28A2C80653600D215BF /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66C0F5B72AC490197371557 /* noop-file.swift */; };
+		0473B28C2C80653600D215BF /* libPods-TaxiApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EEBF8E8E6FB1BC6CAF49B5 /* libPods-TaxiApp.a */; };
+		0473B28E2C80653600D215BF /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
+		0473B28F2C80653600D215BF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		0473B2902C80653600D215BF /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
+		0473B2912C80653600D215BF /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 773671309242B1E57F4820D8 /* PrivacyInfo.xcprivacy */; };
+		0473B2922C80653600D215BF /* DMSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C43481BB02534551B849013C /* DMSans-Black.ttf */; };
+		0473B2932C80653600D215BF /* DMSans-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CAE495D90874315B16ABE78 /* DMSans-BlackItalic.ttf */; };
+		0473B2942C80653600D215BF /* DMSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69890E0D590843078909300B /* DMSans-Bold.ttf */; };
+		0473B2952C80653600D215BF /* DMSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E9A069FD3D64315A9880971 /* DMSans-BoldItalic.ttf */; };
+		0473B2962C80653600D215BF /* DMSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF34E68F48714F9199012978 /* DMSans-ExtraBold.ttf */; };
+		0473B2972C80653600D215BF /* DMSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB25BAFD7946488F9F060B7B /* DMSans-ExtraBoldItalic.ttf */; };
+		0473B2982C80653600D215BF /* DMSans-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 524E5138CC4E46EDBD159CF9 /* DMSans-ExtraLight.ttf */; };
+		0473B2992C80653600D215BF /* DMSans-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A127CA2262A74ED2BD46F6C3 /* DMSans-ExtraLightItalic.ttf */; };
+		0473B29A2C80653600D215BF /* DMSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56729F0717BF42E89EA2CBDE /* DMSans-Italic.ttf */; };
+		0473B29B2C80653600D215BF /* DMSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B2241B14E0547F8BBAD0C05 /* DMSans-Light.ttf */; };
+		0473B29C2C80653600D215BF /* DMSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D5712066D1D49BC8C500DD2 /* DMSans-LightItalic.ttf */; };
+		0473B29D2C80653600D215BF /* DMSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCE3CA933F3945D3B2937562 /* DMSans-Medium.ttf */; };
+		0473B29E2C80653600D215BF /* DMSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 98C08F0F50F947F4B8DF4B8C /* DMSans-MediumItalic.ttf */; };
+		0473B29F2C80653600D215BF /* DMSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C76F2730EBD48E08BEBCF26 /* DMSans-Regular.ttf */; };
+		0473B2A02C80653600D215BF /* DMSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 561F08FCD8DA46619A21D100 /* DMSans-SemiBold.ttf */; };
+		0473B2A12C80653600D215BF /* DMSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86700E6138234103B08D1BEF /* DMSans-SemiBoldItalic.ttf */; };
+		0473B2A22C80653600D215BF /* DMSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4945F34179E4DF8A7A5A2BA /* DMSans-Thin.ttf */; };
+		0473B2A32C80653600D215BF /* DMSans-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B93F6335D359482BB2593795 /* DMSans-ThinItalic.ttf */; };
+		0473B2A42C80653600D215BF /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71096FDC14F94AE087D7ACEF /* OpenSans-Bold.ttf */; };
+		0473B2A52C80653600D215BF /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50870022693B4EA7B287F8E4 /* OpenSans-BoldItalic.ttf */; };
+		0473B2A62C80653600D215BF /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B73105E78AAA471DA68A888C /* OpenSans-ExtraBold.ttf */; };
+		0473B2A72C80653600D215BF /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E7192B94D9B48E68CEFD829 /* OpenSans-ExtraBoldItalic.ttf */; };
+		0473B2A82C80653600D215BF /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5FE580A7FB244948724BBD3 /* OpenSans-Italic.ttf */; };
+		0473B2A92C80653600D215BF /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C61EA43F80444575AAB584A4 /* OpenSans-Light.ttf */; };
+		0473B2AA2C80653600D215BF /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F90E5F58A2142078A60237A /* OpenSans-LightItalic.ttf */; };
+		0473B2AB2C80653600D215BF /* OpenSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FD806E721184FB09F1FC52F /* OpenSans-Medium.ttf */; };
+		0473B2AC2C80653600D215BF /* OpenSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 822B0F60174F4F40965A5E77 /* OpenSans-MediumItalic.ttf */; };
+		0473B2AD2C80653600D215BF /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24761336CF1F468A8964065A /* OpenSans-Regular.ttf */; };
+		0473B2AE2C80653600D215BF /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D75DD62E28148DAB646EDAB /* OpenSans-SemiBold.ttf */; };
+		0473B2AF2C80653600D215BF /* OpenSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6AF25B5F951A4CF998F1C7C6 /* OpenSans-SemiBoldItalic.ttf */; };
 		0A0F20C6184F453A9151B3BD /* noop-file.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66C0F5B72AC490197371557 /* noop-file.swift */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		1ABAC080A2734BA38FCC2512 /* DMSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69890E0D590843078909300B /* DMSans-Bold.ttf */; };
+		1DF9D7509F224D03BC5B7240 /* OpenSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FD806E721184FB09F1FC52F /* OpenSans-Medium.ttf */; };
+		2D12DCFBE76C4093BCA2E997 /* DMSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E4945F34179E4DF8A7A5A2BA /* DMSans-Thin.ttf */; };
+		2FFB60EF71F84C33BC201EC7 /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F90E5F58A2142078A60237A /* OpenSans-LightItalic.ttf */; };
+		395B4D36E32F48C68E3B94B2 /* DMSans-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B93F6335D359482BB2593795 /* DMSans-ThinItalic.ttf */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
+		4B4F60363C8A455BA91F2A58 /* DMSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C76F2730EBD48E08BEBCF26 /* DMSans-Regular.ttf */; };
+		4E58F8146AE94DB29CBC5801 /* OpenSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 822B0F60174F4F40965A5E77 /* OpenSans-MediumItalic.ttf */; };
+		502008688CAA4808A1BFEF16 /* DMSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AB25BAFD7946488F9F060B7B /* DMSans-ExtraBoldItalic.ttf */; };
+		616072C268F4482A8ECB8EFF /* DMSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D5712066D1D49BC8C500DD2 /* DMSans-LightItalic.ttf */; };
+		6F9A7144E49A4CF9BD3C6143 /* DMSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FF34E68F48714F9199012978 /* DMSans-ExtraBold.ttf */; };
+		7CA11B2898BC4AF58EBD1141 /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50870022693B4EA7B287F8E4 /* OpenSans-BoldItalic.ttf */; };
+		8013CA0D01CB4A808603214A /* DMSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B2241B14E0547F8BBAD0C05 /* DMSans-Light.ttf */; };
 		82DB7F4EDD03DB9DCAE56FB3 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 773671309242B1E57F4820D8 /* PrivacyInfo.xcprivacy */; };
+		9166A629E16D4E7E87E41A22 /* DMSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 561F08FCD8DA46619A21D100 /* DMSans-SemiBold.ttf */; };
 		96905EF65AED1B983A6B3ABC /* libPods-TaxiApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EEBF8E8E6FB1BC6CAF49B5 /* libPods-TaxiApp.a */; };
+		A5928556015347C295231383 /* DMSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DCE3CA933F3945D3B2937562 /* DMSans-Medium.ttf */; };
+		A78BA40AA475480992F7A4DC /* OpenSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6AF25B5F951A4CF998F1C7C6 /* OpenSans-SemiBoldItalic.ttf */; };
+		ABEB292856E24F3FAF1FCC58 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5FE580A7FB244948724BBD3 /* OpenSans-Italic.ttf */; };
+		AC5FAE457291444AB46C8408 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24761336CF1F468A8964065A /* OpenSans-Regular.ttf */; };
+		AE6DF4A69DE54470BFB72CF5 /* DMSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E9A069FD3D64315A9880971 /* DMSans-BoldItalic.ttf */; };
 		B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
+		B1E43AB1BCDF4B879EDCE822 /* DMSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 98C08F0F50F947F4B8DF4B8C /* DMSans-MediumItalic.ttf */; };
+		B9B37C139D234575BC0F1A59 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71096FDC14F94AE087D7ACEF /* OpenSans-Bold.ttf */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
+		C2B4AB3CFF88459D8394F880 /* DMSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C43481BB02534551B849013C /* DMSans-Black.ttf */; };
+		CDC7938B6C604E45B047F724 /* DMSans-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A127CA2262A74ED2BD46F6C3 /* DMSans-ExtraLightItalic.ttf */; };
+		DEA1BC799BD541EE941F4978 /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E7192B94D9B48E68CEFD829 /* OpenSans-ExtraBoldItalic.ttf */; };
+		DEA7E735A27F4CF9B0179D11 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B73105E78AAA471DA68A888C /* OpenSans-ExtraBold.ttf */; };
+		E8424C2ACE874BF1808006F7 /* DMSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 86700E6138234103B08D1BEF /* DMSans-SemiBoldItalic.ttf */; };
+		E92E25B7EBC8416D83B54D88 /* DMSans-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 524E5138CC4E46EDBD159CF9 /* DMSans-ExtraLight.ttf */; };
+		F4DA22B063034D0AB15C6E87 /* DMSans-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5CAE495D90874315B16ABE78 /* DMSans-BlackItalic.ttf */; };
+		F4E80C9E1FCC4BB8886B6F00 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D75DD62E28148DAB646EDAB /* OpenSans-SemiBold.ttf */; };
+		FE9EEFCB7D0C4D8D9D08940F /* DMSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56729F0717BF42E89EA2CBDE /* DMSans-Italic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0473B2812C80653300D215BF /* TaxiApp Staging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TaxiApp Staging.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0473B2822C80653400D215BF /* TaxiApp Dev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TaxiApp Dev-Info.plist"; path = "/Users/mac/CabApp/ios/TaxiApp Dev-Info.plist"; sourceTree = "<absolute>"; };
+		0473B2B62C80653600D215BF /* TaxiApp Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TaxiApp Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0473B2B72C80653600D215BF /* TaxiApp Staging-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "TaxiApp Staging-Info.plist"; path = "/Users/mac/CabApp/ios/TaxiApp Staging-Info.plist"; sourceTree = "<absolute>"; };
 		13B07F961A680F5B00A75B9A /* TaxiApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaxiApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = TaxiApp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = TaxiApp/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = TaxiApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TaxiApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = TaxiApp/main.m; sourceTree = "<group>"; };
+		1E9A069FD3D64315A9880971 /* DMSans-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans-BoldItalic.ttf"; path = "../app/assets/fonts/DMSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		1FD806E721184FB09F1FC52F /* OpenSans-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Medium.ttf"; path = "../app/assets/fonts/OpenSans-Medium.ttf"; sourceTree = "<group>"; };
+		24761336CF1F468A8964065A /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Regular.ttf"; path = "../app/assets/fonts/OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		2C76F2730EBD48E08BEBCF26 /* DMSans-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans-Regular.ttf"; path = "../app/assets/fonts/DMSans-Regular.ttf"; sourceTree = "<group>"; };
+		2D5712066D1D49BC8C500DD2 /* DMSans-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans-LightItalic.ttf"; path = "../app/assets/fonts/DMSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		2D75DD62E28148DAB646EDAB /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-SemiBold.ttf"; path = "../app/assets/fonts/OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		3B2241B14E0547F8BBAD0C05 /* DMSans-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans-Light.ttf"; path = "../app/assets/fonts/DMSans-Light.ttf"; sourceTree = "<group>"; };
+		50870022693B4EA7B287F8E4 /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-BoldItalic.ttf"; path = "../app/assets/fonts/OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		524E5138CC4E46EDBD159CF9 /* DMSans-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans-ExtraLight.ttf"; path = "../app/assets/fonts/DMSans-ExtraLight.ttf"; sourceTree = "<group>"; };
+		561F08FCD8DA46619A21D100 /* DMSans-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans-SemiBold.ttf"; path = "../app/assets/fonts/DMSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		56729F0717BF42E89EA2CBDE /* DMSans-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans-Italic.ttf"; path = "../app/assets/fonts/DMSans-Italic.ttf"; sourceTree = "<group>"; };
 		58EEBF8E8E6FB1BC6CAF49B5 /* libPods-TaxiApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TaxiApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CAE495D90874315B16ABE78 /* DMSans-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans-BlackItalic.ttf"; path = "../app/assets/fonts/DMSans-BlackItalic.ttf"; sourceTree = "<group>"; };
+		69890E0D590843078909300B /* DMSans-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans-Bold.ttf"; path = "../app/assets/fonts/DMSans-Bold.ttf"; sourceTree = "<group>"; };
+		6AF25B5F951A4CF998F1C7C6 /* OpenSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-SemiBoldItalic.ttf"; path = "../app/assets/fonts/OpenSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		6C2E3173556A471DD304B334 /* Pods-TaxiApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaxiApp.debug.xcconfig"; path = "Target Support Files/Pods-TaxiApp/Pods-TaxiApp.debug.xcconfig"; sourceTree = "<group>"; };
+		71096FDC14F94AE087D7ACEF /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Bold.ttf"; path = "../app/assets/fonts/OpenSans-Bold.ttf"; sourceTree = "<group>"; };
 		773671309242B1E57F4820D8 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = TaxiApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		7A4D352CD337FB3A3BF06240 /* Pods-TaxiApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaxiApp.release.xcconfig"; path = "Target Support Files/Pods-TaxiApp/Pods-TaxiApp.release.xcconfig"; sourceTree = "<group>"; };
+		7E7192B94D9B48E68CEFD829 /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-ExtraBoldItalic.ttf"; path = "../app/assets/fonts/OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		7F90E5F58A2142078A60237A /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-LightItalic.ttf"; path = "../app/assets/fonts/OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		822B0F60174F4F40965A5E77 /* OpenSans-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-MediumItalic.ttf"; path = "../app/assets/fonts/OpenSans-MediumItalic.ttf"; sourceTree = "<group>"; };
+		86700E6138234103B08D1BEF /* DMSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans-SemiBoldItalic.ttf"; path = "../app/assets/fonts/DMSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		98C08F0F50F947F4B8DF4B8C /* DMSans-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans-MediumItalic.ttf"; path = "../app/assets/fonts/DMSans-MediumItalic.ttf"; sourceTree = "<group>"; };
+		A127CA2262A74ED2BD46F6C3 /* DMSans-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans-ExtraLightItalic.ttf"; path = "../app/assets/fonts/DMSans-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = TaxiApp/SplashScreen.storyboard; sourceTree = "<group>"; };
+		AB25BAFD7946488F9F060B7B /* DMSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans-ExtraBoldItalic.ttf"; path = "../app/assets/fonts/DMSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		B73105E78AAA471DA68A888C /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-ExtraBold.ttf"; path = "../app/assets/fonts/OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		B93F6335D359482BB2593795 /* DMSans-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans-ThinItalic.ttf"; path = "../app/assets/fonts/DMSans-ThinItalic.ttf"; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
+		C43481BB02534551B849013C /* DMSans-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans-Black.ttf"; path = "../app/assets/fonts/DMSans-Black.ttf"; sourceTree = "<group>"; };
+		C61EA43F80444575AAB584A4 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Light.ttf"; path = "../app/assets/fonts/OpenSans-Light.ttf"; sourceTree = "<group>"; };
 		C9155D209CB94C06AD3E633A /* TaxiApp-Bridging-Header.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = "TaxiApp-Bridging-Header.h"; path = "TaxiApp/TaxiApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		DCE3CA933F3945D3B2937562 /* DMSans-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans-Medium.ttf"; path = "../app/assets/fonts/DMSans-Medium.ttf"; sourceTree = "<group>"; };
+		E4945F34179E4DF8A7A5A2BA /* DMSans-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans-Thin.ttf"; path = "../app/assets/fonts/DMSans-Thin.ttf"; sourceTree = "<group>"; };
 		E66C0F5B72AC490197371557 /* noop-file.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "noop-file.swift"; path = "TaxiApp/noop-file.swift"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F5FE580A7FB244948724BBD3 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "OpenSans-Italic.ttf"; path = "../app/assets/fonts/OpenSans-Italic.ttf"; sourceTree = "<group>"; };
 		FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-TaxiApp/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		FF34E68F48714F9199012978 /* DMSans-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "DMSans-ExtraBold.ttf"; path = "../app/assets/fonts/DMSans-ExtraBold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0473B2562C80653300D215BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0473B2572C80653300D215BF /* libPods-TaxiApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0473B28B2C80653600D215BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0473B28C2C80653600D215BF /* libPods-TaxiApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -75,6 +233,43 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5C78C7E52D1846A8A20787F3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C43481BB02534551B849013C /* DMSans-Black.ttf */,
+				5CAE495D90874315B16ABE78 /* DMSans-BlackItalic.ttf */,
+				69890E0D590843078909300B /* DMSans-Bold.ttf */,
+				1E9A069FD3D64315A9880971 /* DMSans-BoldItalic.ttf */,
+				FF34E68F48714F9199012978 /* DMSans-ExtraBold.ttf */,
+				AB25BAFD7946488F9F060B7B /* DMSans-ExtraBoldItalic.ttf */,
+				524E5138CC4E46EDBD159CF9 /* DMSans-ExtraLight.ttf */,
+				A127CA2262A74ED2BD46F6C3 /* DMSans-ExtraLightItalic.ttf */,
+				56729F0717BF42E89EA2CBDE /* DMSans-Italic.ttf */,
+				3B2241B14E0547F8BBAD0C05 /* DMSans-Light.ttf */,
+				2D5712066D1D49BC8C500DD2 /* DMSans-LightItalic.ttf */,
+				DCE3CA933F3945D3B2937562 /* DMSans-Medium.ttf */,
+				98C08F0F50F947F4B8DF4B8C /* DMSans-MediumItalic.ttf */,
+				2C76F2730EBD48E08BEBCF26 /* DMSans-Regular.ttf */,
+				561F08FCD8DA46619A21D100 /* DMSans-SemiBold.ttf */,
+				86700E6138234103B08D1BEF /* DMSans-SemiBoldItalic.ttf */,
+				E4945F34179E4DF8A7A5A2BA /* DMSans-Thin.ttf */,
+				B93F6335D359482BB2593795 /* DMSans-ThinItalic.ttf */,
+				71096FDC14F94AE087D7ACEF /* OpenSans-Bold.ttf */,
+				50870022693B4EA7B287F8E4 /* OpenSans-BoldItalic.ttf */,
+				B73105E78AAA471DA68A888C /* OpenSans-ExtraBold.ttf */,
+				7E7192B94D9B48E68CEFD829 /* OpenSans-ExtraBoldItalic.ttf */,
+				F5FE580A7FB244948724BBD3 /* OpenSans-Italic.ttf */,
+				C61EA43F80444575AAB584A4 /* OpenSans-Light.ttf */,
+				7F90E5F58A2142078A60237A /* OpenSans-LightItalic.ttf */,
+				1FD806E721184FB09F1FC52F /* OpenSans-Medium.ttf */,
+				822B0F60174F4F40965A5E77 /* OpenSans-MediumItalic.ttf */,
+				24761336CF1F468A8964065A /* OpenSans-Regular.ttf */,
+				2D75DD62E28148DAB646EDAB /* OpenSans-SemiBold.ttf */,
+				6AF25B5F951A4CF998F1C7C6 /* OpenSans-SemiBoldItalic.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +286,9 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				D65327D7A22EEC0BE12398D9 /* Pods */,
 				D7E4C46ADA2E9064B798F356 /* ExpoModulesProviders */,
+				5C78C7E52D1846A8A20787F3 /* Resources */,
+				0473B2822C80653400D215BF /* TaxiApp Dev-Info.plist */,
+				0473B2B72C80653600D215BF /* TaxiApp Staging-Info.plist */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -101,6 +299,8 @@
 			isa = PBXGroup;
 			children = (
 				13B07F961A680F5B00A75B9A /* TaxiApp.app */,
+				0473B2812C80653300D215BF /* TaxiApp Staging.app */,
+				0473B2B62C80653600D215BF /* TaxiApp Dev.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -142,6 +342,50 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0473B24E2C80653300D215BF /* TaxiApp Staging */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0473B27E2C80653300D215BF /* Build configuration list for PBXNativeTarget "TaxiApp Staging" */;
+			buildPhases = (
+				0473B24F2C80653300D215BF /* [CP] Check Pods Manifest.lock */,
+				0473B2502C80653300D215BF /* [Expo] Configure project */,
+				0473B2512C80653300D215BF /* Sources */,
+				0473B2562C80653300D215BF /* Frameworks */,
+				0473B2582C80653300D215BF /* Resources */,
+				0473B27B2C80653300D215BF /* Bundle React Native code and images */,
+				0473B27C2C80653300D215BF /* [CP] Copy Pods Resources */,
+				0473B27D2C80653300D215BF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TaxiApp Staging";
+			productName = TaxiApp;
+			productReference = 0473B2812C80653300D215BF /* TaxiApp Staging.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0473B2832C80653600D215BF /* TaxiApp Dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0473B2B32C80653600D215BF /* Build configuration list for PBXNativeTarget "TaxiApp Dev" */;
+			buildPhases = (
+				0473B2842C80653600D215BF /* [CP] Check Pods Manifest.lock */,
+				0473B2852C80653600D215BF /* [Expo] Configure project */,
+				0473B2862C80653600D215BF /* Sources */,
+				0473B28B2C80653600D215BF /* Frameworks */,
+				0473B28D2C80653600D215BF /* Resources */,
+				0473B2B02C80653600D215BF /* Bundle React Native code and images */,
+				0473B2B12C80653600D215BF /* [CP] Copy Pods Resources */,
+				0473B2B22C80653600D215BF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TaxiApp Dev";
+			productName = TaxiApp;
+			productReference = 0473B2B62C80653600D215BF /* TaxiApp Dev.app */;
+			productType = "com.apple.product-type.application";
+		};
 		13B07F861A680F5B00A75B9A /* TaxiApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "TaxiApp" */;
@@ -193,11 +437,95 @@
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* TaxiApp */,
+				0473B24E2C80653300D215BF /* TaxiApp Staging */,
+				0473B2832C80653600D215BF /* TaxiApp Dev */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0473B2582C80653300D215BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0473B2592C80653300D215BF /* Expo.plist in Resources */,
+				0473B25A2C80653300D215BF /* Images.xcassets in Resources */,
+				0473B25B2C80653300D215BF /* SplashScreen.storyboard in Resources */,
+				0473B25C2C80653300D215BF /* PrivacyInfo.xcprivacy in Resources */,
+				0473B25D2C80653300D215BF /* DMSans-Black.ttf in Resources */,
+				0473B25E2C80653300D215BF /* DMSans-BlackItalic.ttf in Resources */,
+				0473B25F2C80653300D215BF /* DMSans-Bold.ttf in Resources */,
+				0473B2602C80653300D215BF /* DMSans-BoldItalic.ttf in Resources */,
+				0473B2612C80653300D215BF /* DMSans-ExtraBold.ttf in Resources */,
+				0473B2622C80653300D215BF /* DMSans-ExtraBoldItalic.ttf in Resources */,
+				0473B2632C80653300D215BF /* DMSans-ExtraLight.ttf in Resources */,
+				0473B2642C80653300D215BF /* DMSans-ExtraLightItalic.ttf in Resources */,
+				0473B2652C80653300D215BF /* DMSans-Italic.ttf in Resources */,
+				0473B2662C80653300D215BF /* DMSans-Light.ttf in Resources */,
+				0473B2672C80653300D215BF /* DMSans-LightItalic.ttf in Resources */,
+				0473B2682C80653300D215BF /* DMSans-Medium.ttf in Resources */,
+				0473B2692C80653300D215BF /* DMSans-MediumItalic.ttf in Resources */,
+				0473B26A2C80653300D215BF /* DMSans-Regular.ttf in Resources */,
+				0473B26B2C80653300D215BF /* DMSans-SemiBold.ttf in Resources */,
+				0473B26C2C80653300D215BF /* DMSans-SemiBoldItalic.ttf in Resources */,
+				0473B26D2C80653300D215BF /* DMSans-Thin.ttf in Resources */,
+				0473B26E2C80653300D215BF /* DMSans-ThinItalic.ttf in Resources */,
+				0473B26F2C80653300D215BF /* OpenSans-Bold.ttf in Resources */,
+				0473B2702C80653300D215BF /* OpenSans-BoldItalic.ttf in Resources */,
+				0473B2712C80653300D215BF /* OpenSans-ExtraBold.ttf in Resources */,
+				0473B2722C80653300D215BF /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				0473B2732C80653300D215BF /* OpenSans-Italic.ttf in Resources */,
+				0473B2742C80653300D215BF /* OpenSans-Light.ttf in Resources */,
+				0473B2752C80653300D215BF /* OpenSans-LightItalic.ttf in Resources */,
+				0473B2762C80653300D215BF /* OpenSans-Medium.ttf in Resources */,
+				0473B2772C80653300D215BF /* OpenSans-MediumItalic.ttf in Resources */,
+				0473B2782C80653300D215BF /* OpenSans-Regular.ttf in Resources */,
+				0473B2792C80653300D215BF /* OpenSans-SemiBold.ttf in Resources */,
+				0473B27A2C80653300D215BF /* OpenSans-SemiBoldItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0473B28D2C80653600D215BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0473B28E2C80653600D215BF /* Expo.plist in Resources */,
+				0473B28F2C80653600D215BF /* Images.xcassets in Resources */,
+				0473B2902C80653600D215BF /* SplashScreen.storyboard in Resources */,
+				0473B2912C80653600D215BF /* PrivacyInfo.xcprivacy in Resources */,
+				0473B2922C80653600D215BF /* DMSans-Black.ttf in Resources */,
+				0473B2932C80653600D215BF /* DMSans-BlackItalic.ttf in Resources */,
+				0473B2942C80653600D215BF /* DMSans-Bold.ttf in Resources */,
+				0473B2952C80653600D215BF /* DMSans-BoldItalic.ttf in Resources */,
+				0473B2962C80653600D215BF /* DMSans-ExtraBold.ttf in Resources */,
+				0473B2972C80653600D215BF /* DMSans-ExtraBoldItalic.ttf in Resources */,
+				0473B2982C80653600D215BF /* DMSans-ExtraLight.ttf in Resources */,
+				0473B2992C80653600D215BF /* DMSans-ExtraLightItalic.ttf in Resources */,
+				0473B29A2C80653600D215BF /* DMSans-Italic.ttf in Resources */,
+				0473B29B2C80653600D215BF /* DMSans-Light.ttf in Resources */,
+				0473B29C2C80653600D215BF /* DMSans-LightItalic.ttf in Resources */,
+				0473B29D2C80653600D215BF /* DMSans-Medium.ttf in Resources */,
+				0473B29E2C80653600D215BF /* DMSans-MediumItalic.ttf in Resources */,
+				0473B29F2C80653600D215BF /* DMSans-Regular.ttf in Resources */,
+				0473B2A02C80653600D215BF /* DMSans-SemiBold.ttf in Resources */,
+				0473B2A12C80653600D215BF /* DMSans-SemiBoldItalic.ttf in Resources */,
+				0473B2A22C80653600D215BF /* DMSans-Thin.ttf in Resources */,
+				0473B2A32C80653600D215BF /* DMSans-ThinItalic.ttf in Resources */,
+				0473B2A42C80653600D215BF /* OpenSans-Bold.ttf in Resources */,
+				0473B2A52C80653600D215BF /* OpenSans-BoldItalic.ttf in Resources */,
+				0473B2A62C80653600D215BF /* OpenSans-ExtraBold.ttf in Resources */,
+				0473B2A72C80653600D215BF /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				0473B2A82C80653600D215BF /* OpenSans-Italic.ttf in Resources */,
+				0473B2A92C80653600D215BF /* OpenSans-Light.ttf in Resources */,
+				0473B2AA2C80653600D215BF /* OpenSans-LightItalic.ttf in Resources */,
+				0473B2AB2C80653600D215BF /* OpenSans-Medium.ttf in Resources */,
+				0473B2AC2C80653600D215BF /* OpenSans-MediumItalic.ttf in Resources */,
+				0473B2AD2C80653600D215BF /* OpenSans-Regular.ttf in Resources */,
+				0473B2AE2C80653600D215BF /* OpenSans-SemiBold.ttf in Resources */,
+				0473B2AF2C80653600D215BF /* OpenSans-SemiBoldItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		13B07F8E1A680F5B00A75B9A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -206,6 +534,36 @@
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
 				82DB7F4EDD03DB9DCAE56FB3 /* PrivacyInfo.xcprivacy in Resources */,
+				C2B4AB3CFF88459D8394F880 /* DMSans-Black.ttf in Resources */,
+				F4DA22B063034D0AB15C6E87 /* DMSans-BlackItalic.ttf in Resources */,
+				1ABAC080A2734BA38FCC2512 /* DMSans-Bold.ttf in Resources */,
+				AE6DF4A69DE54470BFB72CF5 /* DMSans-BoldItalic.ttf in Resources */,
+				6F9A7144E49A4CF9BD3C6143 /* DMSans-ExtraBold.ttf in Resources */,
+				502008688CAA4808A1BFEF16 /* DMSans-ExtraBoldItalic.ttf in Resources */,
+				E92E25B7EBC8416D83B54D88 /* DMSans-ExtraLight.ttf in Resources */,
+				CDC7938B6C604E45B047F724 /* DMSans-ExtraLightItalic.ttf in Resources */,
+				FE9EEFCB7D0C4D8D9D08940F /* DMSans-Italic.ttf in Resources */,
+				8013CA0D01CB4A808603214A /* DMSans-Light.ttf in Resources */,
+				616072C268F4482A8ECB8EFF /* DMSans-LightItalic.ttf in Resources */,
+				A5928556015347C295231383 /* DMSans-Medium.ttf in Resources */,
+				B1E43AB1BCDF4B879EDCE822 /* DMSans-MediumItalic.ttf in Resources */,
+				4B4F60363C8A455BA91F2A58 /* DMSans-Regular.ttf in Resources */,
+				9166A629E16D4E7E87E41A22 /* DMSans-SemiBold.ttf in Resources */,
+				E8424C2ACE874BF1808006F7 /* DMSans-SemiBoldItalic.ttf in Resources */,
+				2D12DCFBE76C4093BCA2E997 /* DMSans-Thin.ttf in Resources */,
+				395B4D36E32F48C68E3B94B2 /* DMSans-ThinItalic.ttf in Resources */,
+				B9B37C139D234575BC0F1A59 /* OpenSans-Bold.ttf in Resources */,
+				7CA11B2898BC4AF58EBD1141 /* OpenSans-BoldItalic.ttf in Resources */,
+				DEA7E735A27F4CF9B0179D11 /* OpenSans-ExtraBold.ttf in Resources */,
+				DEA1BC799BD541EE941F4978 /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				ABEB292856E24F3FAF1FCC58 /* OpenSans-Italic.ttf in Resources */,
+				0079FC46818D41079CE9EDB5 /* OpenSans-Light.ttf in Resources */,
+				2FFB60EF71F84C33BC201EC7 /* OpenSans-LightItalic.ttf in Resources */,
+				1DF9D7509F224D03BC5B7240 /* OpenSans-Medium.ttf in Resources */,
+				4E58F8146AE94DB29CBC5801 /* OpenSans-MediumItalic.ttf in Resources */,
+				AC5FAE457291444AB46C8408 /* OpenSans-Regular.ttf in Resources */,
+				F4E80C9E1FCC4BB8886B6F00 /* OpenSans-SemiBold.ttf in Resources */,
+				A78BA40AA475480992F7A4DC /* OpenSans-SemiBoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +584,254 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if [[ -f \"$PODS_ROOT/../.xcode.env\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env\"\nfi\nif [[ -f \"$PODS_ROOT/../.xcode.env.local\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.local\"\nfi\n\n# The project root by default is one level up from the ios directory\nexport PROJECT_ROOT=\"$PROJECT_DIR\"/..\n\nif [[ \"$CONFIGURATION\" = *Debug* ]]; then\n  export SKIP_BUNDLING=1\nfi\nif [[ -z \"$ENTRY_FILE\" ]]; then\n  # Set the entry JS file using the bundler's entry resolution.\n  export ENTRY_FILE=\"$(\"$NODE_BINARY\" -e \"require('expo/scripts/resolveAppEntry')\" \"$PROJECT_ROOT\" ios absolute | tail -n 1)\"\nfi\n\nif [[ -z \"$CLI_PATH\" ]]; then\n  # Use Expo CLI\n  export CLI_PATH=\"$(\"$NODE_BINARY\" --print \"require.resolve('@expo/cli', { paths: [require.resolve('expo/package.json')] })\")\"\nfi\nif [[ -z \"$BUNDLE_COMMAND\" ]]; then\n  # Default Expo CLI command for bundling\n  export BUNDLE_COMMAND=\"export:embed\"\nfi\n\n# Source .xcode.env.updates if it exists to allow\n# SKIP_BUNDLING to be unset if needed\nif [[ -f \"$PODS_ROOT/../.xcode.env.updates\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.updates\"\nfi\n# Source local changes to allow overrides\n# if needed\nif [[ -f \"$PODS_ROOT/../.xcode.env.local\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.local\"\nfi\n\n`\"$NODE_BINARY\" --print \"require('path').dirname(require.resolve('react-native/package.json')) + '/scripts/react-native-xcode.sh'\"`\n\n";
+		};
+		0473B24F2C80653300D215BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TaxiApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0473B2502C80653300D215BF /* [Expo] Configure project */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[Expo] Configure project";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-TaxiApp/expo-configure-project.sh\"\n";
+		};
+		0473B27B2C80653300D215BF /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ -f \"$PODS_ROOT/../.xcode.env\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env\"\nfi\nif [[ -f \"$PODS_ROOT/../.xcode.env.local\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.local\"\nfi\n\n# The project root by default is one level up from the ios directory\nexport PROJECT_ROOT=\"$PROJECT_DIR\"/..\n\nif [[ \"$CONFIGURATION\" = *Debug* ]]; then\n  export SKIP_BUNDLING=1\nfi\nif [[ -z \"$ENTRY_FILE\" ]]; then\n  # Set the entry JS file using the bundler's entry resolution.\n  export ENTRY_FILE=\"$(\"$NODE_BINARY\" -e \"require('expo/scripts/resolveAppEntry')\" \"$PROJECT_ROOT\" ios absolute | tail -n 1)\"\nfi\n\nif [[ -z \"$CLI_PATH\" ]]; then\n  # Use Expo CLI\n  export CLI_PATH=\"$(\"$NODE_BINARY\" --print \"require.resolve('@expo/cli', { paths: [require.resolve('expo/package.json')] })\")\"\nfi\nif [[ -z \"$BUNDLE_COMMAND\" ]]; then\n  # Default Expo CLI command for bundling\n  export BUNDLE_COMMAND=\"export:embed\"\nfi\n\n# Source .xcode.env.updates if it exists to allow\n# SKIP_BUNDLING to be unset if needed\nif [[ -f \"$PODS_ROOT/../.xcode.env.updates\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.updates\"\nfi\n# Source local changes to allow overrides\n# if needed\nif [[ -f \"$PODS_ROOT/../.xcode.env.local\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.local\"\nfi\n\n`\"$NODE_BINARY\" --print \"require('path').dirname(require.resolve('react-native/package.json')) + '/scripts/react-native-xcode.sh'\"`\n\n";
+		};
+		0473B27C2C80653300D215BF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TaxiApp/Pods-TaxiApp-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/AppAuth/AppAuthCore_Privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/EXConstants.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/ExpoConstants_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/ExpoFileSystem/ExpoFileSystem_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/GTMAppAuth/GTMAppAuth_Privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher/GTMSessionFetcher_Core_Privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/GoogleSignIn/GoogleSignIn.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/RCTI18nStrings.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/expo-dev-launcher/EXDevLauncher.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/expo-dev-menu/EXDevMenu.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AppAuthCore_Privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EXConstants.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExpoConstants_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExpoFileSystem_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GTMAppAuth_Privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GTMSessionFetcher_Core_Privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RCTI18nStrings.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SDWebImage.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EXDevLauncher.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EXDevMenu.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TaxiApp/Pods-TaxiApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0473B27D2C80653300D215BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TaxiApp/Pods-TaxiApp-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBAEMKit/FBAEMKit.framework/FBAEMKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework/FBSDKCoreKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKCoreKit_Basics/FBSDKCoreKit_Basics.framework/FBSDKCoreKit_Basics",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKGamingServicesKit/FBSDKGamingServicesKit.framework/FBSDKGamingServicesKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework/FBSDKLoginKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKShareKit/FBSDKShareKit.framework/FBSDKShareKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBAEMKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit_Basics.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKGamingServicesKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TaxiApp/Pods-TaxiApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0473B2842C80653600D215BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TaxiApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0473B2852C80653600D215BF /* [Expo] Configure project */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[Expo] Configure project";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-TaxiApp/expo-configure-project.sh\"\n";
+		};
+		0473B2B02C80653600D215BF /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ -f \"$PODS_ROOT/../.xcode.env\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env\"\nfi\nif [[ -f \"$PODS_ROOT/../.xcode.env.local\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.local\"\nfi\n\n# The project root by default is one level up from the ios directory\nexport PROJECT_ROOT=\"$PROJECT_DIR\"/..\n\nif [[ \"$CONFIGURATION\" = *Debug* ]]; then\n  export SKIP_BUNDLING=1\nfi\nif [[ -z \"$ENTRY_FILE\" ]]; then\n  # Set the entry JS file using the bundler's entry resolution.\n  export ENTRY_FILE=\"$(\"$NODE_BINARY\" -e \"require('expo/scripts/resolveAppEntry')\" \"$PROJECT_ROOT\" ios absolute | tail -n 1)\"\nfi\n\nif [[ -z \"$CLI_PATH\" ]]; then\n  # Use Expo CLI\n  export CLI_PATH=\"$(\"$NODE_BINARY\" --print \"require.resolve('@expo/cli', { paths: [require.resolve('expo/package.json')] })\")\"\nfi\nif [[ -z \"$BUNDLE_COMMAND\" ]]; then\n  # Default Expo CLI command for bundling\n  export BUNDLE_COMMAND=\"export:embed\"\nfi\n\n# Source .xcode.env.updates if it exists to allow\n# SKIP_BUNDLING to be unset if needed\nif [[ -f \"$PODS_ROOT/../.xcode.env.updates\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.updates\"\nfi\n# Source local changes to allow overrides\n# if needed\nif [[ -f \"$PODS_ROOT/../.xcode.env.local\" ]]; then\n  source \"$PODS_ROOT/../.xcode.env.local\"\nfi\n\n`\"$NODE_BINARY\" --print \"require('path').dirname(require.resolve('react-native/package.json')) + '/scripts/react-native-xcode.sh'\"`\n\n";
+		};
+		0473B2B12C80653600D215BF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TaxiApp/Pods-TaxiApp-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/AppAuth/AppAuthCore_Privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/EXConstants.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/ExpoConstants_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/ExpoFileSystem/ExpoFileSystem_privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/GTMAppAuth/GTMAppAuth_Privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/GTMSessionFetcher/GTMSessionFetcher_Core_Privacy.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/GoogleSignIn/GoogleSignIn.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/RCTI18nStrings.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/SDWebImage/SDWebImage.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/expo-dev-launcher/EXDevLauncher.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/expo-dev-menu/EXDevMenu.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AppAuthCore_Privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EXConstants.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExpoConstants_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ExpoFileSystem_privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GTMAppAuth_Privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GTMSessionFetcher_Core_Privacy.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/RCTI18nStrings.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SDWebImage.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EXDevLauncher.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EXDevMenu.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TaxiApp/Pods-TaxiApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0473B2B22C80653600D215BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TaxiApp/Pods-TaxiApp-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBAEMKit/FBAEMKit.framework/FBAEMKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework/FBSDKCoreKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKCoreKit_Basics/FBSDKCoreKit_Basics.framework/FBSDKCoreKit_Basics",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKGamingServicesKit/FBSDKGamingServicesKit.framework/FBSDKGamingServicesKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework/FBSDKLoginKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FBSDKShareKit/FBSDKShareKit.framework/FBSDKShareKit",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/hermes-engine/Pre-built/hermes.framework/hermes",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBAEMKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit_Basics.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKGamingServicesKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hermes.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TaxiApp/Pods-TaxiApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -339,6 +945,28 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0473B2512C80653300D215BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0473B2522C80653300D215BF /* AppDelegate.mm in Sources */,
+				0473B2532C80653300D215BF /* main.m in Sources */,
+				0473B2542C80653300D215BF /* ExpoModulesProvider.swift in Sources */,
+				0473B2552C80653300D215BF /* noop-file.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0473B2862C80653600D215BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0473B2872C80653600D215BF /* AppDelegate.mm in Sources */,
+				0473B2882C80653600D215BF /* main.m in Sources */,
+				0473B2892C80653600D215BF /* ExpoModulesProvider.swift in Sources */,
+				0473B28A2C80653600D215BF /* noop-file.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		13B07F871A680F5B00A75B9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -353,6 +981,150 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		0473B27F2C80653300D215BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C2E3173556A471DD304B334 /* Pods-TaxiApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TaxiApp/TaxiApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WUPVXW92EW;
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"FB_SONARKIT_ENABLED=1",
+				);
+				INFOPLIST_FILE = "TaxiApp Staging-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Hyre.TimeStamp.staging;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TaxiApp/TaxiApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		0473B2802C80653300D215BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A4D352CD337FB3A3BF06240 /* Pods-TaxiApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TaxiApp/TaxiApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WUPVXW92EW;
+				INFOPLIST_FILE = "TaxiApp Staging-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Hyre.TimeStamp.staging;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TaxiApp/TaxiApp-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		0473B2B42C80653600D215BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C2E3173556A471DD304B334 /* Pods-TaxiApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TaxiApp/TaxiApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WUPVXW92EW;
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"FB_SONARKIT_ENABLED=1",
+				);
+				INFOPLIST_FILE = "TaxiApp Dev-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Hyre.TimeStamp.staging;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TaxiApp/TaxiApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		0473B2B52C80653600D215BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A4D352CD337FB3A3BF06240 /* Pods-TaxiApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TaxiApp/TaxiApp.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WUPVXW92EW;
+				INFOPLIST_FILE = "TaxiApp Dev-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Hyre.TimeStamp.staging;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TaxiApp/TaxiApp-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6C2E3173556A471DD304B334 /* Pods-TaxiApp.debug.xcconfig */;
@@ -484,10 +1256,7 @@
 				LIBRARY_SEARCH_PATHS = "$(SDKROOT)/usr/lib/swift\"$(inherited)\"";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
@@ -545,10 +1314,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(SDKROOT)/usr/lib/swift\"$(inherited)\"";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
@@ -559,6 +1325,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0473B27E2C80653300D215BF /* Build configuration list for PBXNativeTarget "TaxiApp Staging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0473B27F2C80653300D215BF /* Debug */,
+				0473B2802C80653300D215BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0473B2B32C80653600D215BF /* Build configuration list for PBXNativeTarget "TaxiApp Dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0473B2B42C80653600D215BF /* Debug */,
+				0473B2B52C80653600D215BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "TaxiApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

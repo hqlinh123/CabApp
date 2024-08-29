@@ -2,6 +2,14 @@ apply plugin: "com.android.application"
 apply plugin: "org.jetbrains.kotlin.android"
 apply plugin: "com.facebook.react"
 
+
+project.ext.envConfigFiles = [
+   production: ".env.production",
+   staging: ".env.staging",
+   development: ".env.development"
+]
+apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
+
 def projectRoot = rootDir.getAbsoluteFile().getParentFile().getAbsolutePath()
 
 static def versionToNumber(major, minor, patch) {
@@ -105,10 +113,26 @@ def jscFlavor = 'org.webkit:android-jsc:+'
 
 android {
     ndkVersion rootProject.ext.ndkVersion
-
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
-
+        flavorDimensions "default"
+    productFlavors {
+        production {
+            minSdkVersion rootProject.ext.minSdkVersion
+            applicationId "com.multiplatform"
+            targetSdkVersion rootProject.ext.targetSdkVersion
+        }
+        staging {
+            minSdkVersion rootProject.ext.minSdkVersion
+            applicationId "com.multiplatform.staging"
+            targetSdkVersion rootProject.ext.targetSdkVersion
+        }
+        development {
+            minSdkVersion rootProject.ext.minSdkVersion
+            applicationId "com.multiplatform.development"
+            targetSdkVersion rootProject.ext.targetSdkVersion
+        }
+    }
     namespace 'com.linhkhoai.taxiapp'
     defaultConfig {
         applicationId 'com.linhkhoai.taxiapp'
@@ -116,6 +140,7 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "0.0.1"
+        resValue "string", "build_config_package", "com.multiplatform"
     }
     signingConfigs {
         debug {
@@ -128,6 +153,7 @@ android {
     buildTypes {
         debug {
             signingConfig signingConfigs.debug
+            matchingFallbacks = ['debug', 'release']
         }
         release {
             // Caution! In production, you need to generate your own keystore file.
