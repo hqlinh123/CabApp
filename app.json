@@ -2,11 +2,11 @@
   "name": "TaxiApp",
   "displayName": "TaxiApp",
   "android": {
-    "package": "com.linhkhoai.taxiapp",
+    "package": "com.taxi.platform",
     "googleServicesFile": "./google-services.json"
   },
   "ios": {
-    "bundleIdentifier": "com.linhkhoai.taxiapp",
+    "bundleIdentifier": "com.taxi.platform",
     "googleServicesFile": "./GoogleService-Info.plist",
     "usesAppleSignIn": true
   },
@@ -54,14 +54,14 @@
           }
         ]
       },
-      "bundleIdentifier": "com.linhkhoai.taxiapp"
+      "bundleIdentifier": "com.taxi.platform"
     },
     "android": {
       "permissions": [
         "android.permission.INTERNET",
         "com.google.android.gms.permission.AD_ID"
       ],
-      "package": "com.linhkhoai.taxiapp"
+      "package": "com.taxi.platform"
     },
     "extra": {
       "eas": {

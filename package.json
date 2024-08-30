@@ -16,7 +16,10 @@
     "eas-android": " yarn expo-fix && eas build --platform android",
     "eas-ios": " yarn expo-fix && eas build --platform ios",
     "eas-all": " yarn expo-fix && eas build --platform all",
-    "eas-list": " yarn expo-fix && eas build:list"
+    "eas-list": " yarn expo-fix && eas build:list",
+    "android:dev": "react-native run-android --mode=developmentdebug --appId=com.taxi.platform.development",
+    "android:stage": "react-native run-android --mode=stagingrelease --appId=com.taxi.platform.staging",
+    "android:prod": "react-native run-android --mode=productionrelease --appId=com.taxi.platform"
   },
   "dependencies": {
     "@invertase/react-native-apple-authentication": "^2.3.0",

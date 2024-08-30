@@ -31,7 +31,7 @@
         <action android:name="android.intent.action.VIEW"/>
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>
-        <data android:scheme="com.linhkhoai.taxiapp"/>
+        <data android:scheme="com.taxi.platform"/>
         <data android:scheme="exp+taxiapp"/>
       </intent-filter>
     </activity>

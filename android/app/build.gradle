@@ -119,23 +119,23 @@ android {
     productFlavors {
         production {
             minSdkVersion rootProject.ext.minSdkVersion
-            applicationId "com.multiplatform"
+            applicationId "com.taxi.platform"
             targetSdkVersion rootProject.ext.targetSdkVersion
         }
         staging {
             minSdkVersion rootProject.ext.minSdkVersion
-            applicationId "com.multiplatform.staging"
+            applicationId "com.taxi.platform.staging"
             targetSdkVersion rootProject.ext.targetSdkVersion
         }
         development {
             minSdkVersion rootProject.ext.minSdkVersion
-            applicationId "com.multiplatform.development"
+            applicationId "com.taxi.platform.development"
             targetSdkVersion rootProject.ext.targetSdkVersion
         }
     }
-    namespace 'com.linhkhoai.taxiapp'
+    namespace 'com.taxi.platform'
     defaultConfig {
-        applicationId 'com.linhkhoai.taxiapp'
+        applicationId 'com.taxi.platform'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

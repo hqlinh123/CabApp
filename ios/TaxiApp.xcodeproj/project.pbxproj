@@ -1010,7 +1010,7 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Hyre.TimeStamp.staging;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taxi.platform.staging;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TaxiApp/TaxiApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1044,7 +1044,7 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Hyre.TimeStamp.staging;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taxi.platform.staging;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TaxiApp/TaxiApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -1082,7 +1082,7 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Hyre.TimeStamp.staging;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taxi.platform.development;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TaxiApp/TaxiApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1116,7 +1116,7 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Hyre.TimeStamp.staging;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taxi.platform.development;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TaxiApp/TaxiApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -1154,7 +1154,7 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_DEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Hyre.TimeStamp.staging;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taxi.platform;
 				PRODUCT_NAME = TaxiApp;
 				SWIFT_OBJC_BRIDGING_HEADER = "TaxiApp/TaxiApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1188,7 +1188,7 @@
 					"-lc++",
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited) -D EXPO_CONFIGURATION_RELEASE";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Hyre.TimeStamp.staging;
+				PRODUCT_BUNDLE_IDENTIFIER = com.taxi.platform;
 				PRODUCT_NAME = TaxiApp;
 				SWIFT_OBJC_BRIDGING_HEADER = "TaxiApp/TaxiApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

@@ -1,4 +1,4 @@
-package com.linhkhoai.taxiapp
+package com.taxi.platform
 
 import android.os.Build
 import android.os.Bundle

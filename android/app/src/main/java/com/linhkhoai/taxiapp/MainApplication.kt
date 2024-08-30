@@ -1,4 +1,4 @@
-package com.linhkhoai.taxiapp
+package com.taxi.platform
 
 import android.app.Application
 import android.content.res.Configuration
